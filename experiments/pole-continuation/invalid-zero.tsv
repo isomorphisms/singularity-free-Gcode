@@ -1,0 +1,2 @@
+case_id	incoming_x	incoming_y	outgoing_x	outgoing_y	pose_kind
+zero_incoming	0	0	0	1	tip-plus-direction
