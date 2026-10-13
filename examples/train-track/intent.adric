@@ -1,0 +1,79 @@
+object straight track A
+
+  regard the complete object as one train track
+  orient the track from west to east
+  measure geometry in millimetres
+
+  centreline goes from (20, 50) to (180, 50)
+  gauge is 20
+
+  rail left is 10 to the left of the oriented centreline
+  rail right is 10 to the right of the oriented centreline
+
+  sleeper 01 crosses the centreline at x 25 and spans 15 on each side
+  sleeper 02 crosses the centreline at x 45 and spans 15 on each side
+  sleeper 03 crosses the centreline at x 65 and spans 15 on each side
+  sleeper 04 crosses the centreline at x 85 and spans 15 on each side
+  sleeper 05 crosses the centreline at x 105 and spans 15 on each side
+  sleeper 06 crosses the centreline at x 125 and spans 15 on each side
+  sleeper 07 crosses the centreline at x 145 and spans 15 on each side
+  sleeper 08 crosses the centreline at x 165 and spans 15 on each side
+
+  transform all rails and sleepers together when the track is moved,
+  rotated, reflected, or scaled
+
+
+realization pen drawing
+
+  draw straight track A
+
+  using a pen
+  assuming a flat planar work surface
+  once per semantic stroke
+  restricted to straight working strokes in this first example
+
+  traverse rail left from west to east
+  traverse rail right from east to west
+  traverse sleepers in increasing x
+  alternate sleeper direction south-to-north then north-to-south
+
+  make sure every rail and sleeper has exactly one working traversal
+  make sure every repositioning move occurs with the pen raised
+  make sure every working motion names the semantic stroke it realizes
+  make sure the output still identifies the complete object as straight track A
+
+
+realization material cutting
+
+  cut the geometry of straight track A into plate
+
+  using a machine-specific milling adapter
+  assuming the stock, tool, work origin, and safe height have been verified
+  progressively deeper per semantic stroke
+  restricted to depth increments accepted by the machine-specific process plan
+  back and forth by alternating the direction of successive depth passes
+
+  make sure every semantic stroke reaches the requested final depth
+  make sure rapid travel occurs only at the verified safe height
+  make sure every depth pass maps back to its rail or sleeper
+
+  do not emit runnable machine code until the adapter supplies machine limits,
+  tool data, feeds, speeds, origin, clearance, and safety checks
+
+
+inspection requests the language should support
+
+  show how straight track A becomes ten semantic strokes
+  show how rail left becomes geometry
+  show how the ten strokes are ordered for the pen
+  show how once per semantic stroke was checked
+  show which G-code motions realize sleeper 04
+
+  rotate straight track A by 30 degrees
+  but keep the same pen-traversal policy
+
+  go over both rails twice
+  but each sleeper once
+
+  replace sleeper 04 only
+  without rebuilding unrelated parts of the track
