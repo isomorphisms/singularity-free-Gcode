@@ -1,0 +1,12 @@
+semantic_id	parent_id	kind	geometry_mm	pen_expected_working_traversals
+track.A	-	train-track	centreline (20,50)→(180,50); gauge 20	-
+track.A.rail.left	track.A	rail	(20,60)→(180,60)	1
+track.A.rail.right	track.A	rail	(20,40)→(180,40)	1
+track.A.sleeper.01	track.A	sleeper	(25,35)→(25,65)	1
+track.A.sleeper.02	track.A	sleeper	(45,35)→(45,65)	1
+track.A.sleeper.03	track.A	sleeper	(65,35)→(65,65)	1
+track.A.sleeper.04	track.A	sleeper	(85,35)→(85,65)	1
+track.A.sleeper.05	track.A	sleeper	(105,35)→(105,65)	1
+track.A.sleeper.06	track.A	sleeper	(125,35)→(125,65)	1
+track.A.sleeper.07	track.A	sleeper	(145,35)→(145,65)	1
+track.A.sleeper.08	track.A	sleeper	(165,35)→(165,65)	1
