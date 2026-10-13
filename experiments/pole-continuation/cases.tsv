@@ -5,3 +5,4 @@ y_to_x	0	1	1	0	tip-plus-direction
 three_four_to_six_eight	3	4	6	8	tip-plus-direction
 three_four_to_negative_four_three	3	4	-4	3	tip-plus-direction
 rational_rescaling	3/2	2	9/4	3	tip-plus-direction
+irrational_settings	1	1	-2	-2	tip-plus-direction

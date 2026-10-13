@@ -64,16 +64,20 @@ clearance, gouge avoidance, safe cutting or collision freedom.
 
 `cases.tsv` covers equal and opposite Y meridians, orthogonal Y/X meridians,
 parallel integer vectors, a nonparallel Pythagorean pair, and a rational
-rescaling.  `invalid-zero.tsv` and `invalid-full-frame.tsv` exercise the two
+rescaling, plus a meridian whose two real settings are irrational over QQ.
+`invalid-zero.tsv` and `invalid-full-frame.tsv` exercise the two
 input boundaries.
 
 ## Execution boundary
 
 Macaulay2 owns the exact ideal, radical, dimension and degree calculations.
-No compiled helper is introduced.  A Flexible Pipes command stage may invoke a
-verified `M2 --script` entrypoint directly; a new shell wrapper would belong in
-Grease.  The current Grease source entrypoint requires Python 2 on the host and
-is not executable here, so no Grease execution is claimed.  A run receipt must
+No compiled helper is introduced. The Flexible Pipes pipeline invokes its
+Grease orchestration stage, which captures producer exits and outputs before
+calling the independent ai-ci oracles. Compiled Grease runs without Python 2;
+the development launcher is a different entrypoint. A run receipt must
 identify the Macaulay2 executable, source hashes, input hash, argv and output
 hash.  Independent ai-ci acceptance is required before a result can inform a
 later realization policy.
+
+The scope of the status remains limiting-setting compatibility. A successful
+exact run is neither a physical machine test nor platform-delivery attestation.
