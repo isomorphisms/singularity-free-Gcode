@@ -1,0 +1,8 @@
+case_id	incoming_x	incoming_y	outgoing_x	outgoing_y	pose_kind
+y_to_y	0	1	0	1	tip-plus-direction
+y_to_negative_y	0	1	0	-1	tip-plus-direction
+y_to_x	0	1	1	0	tip-plus-direction
+three_four_to_six_eight	3	4	6	8	tip-plus-direction
+three_four_to_negative_four_three	3	4	-4	3	tip-plus-direction
+rational_rescaling	3/2	2	9/4	3	tip-plus-direction
+irrational_settings	1	1	-2	-2	tip-plus-direction

@@ -40,6 +40,11 @@ Do not turn all levels into one mandatory type system. Keep multiple semantic vi
 
 ## Small experiments
 
+See the [Fulton bridge](fulton-constraint-fibers.md) for completed inverse-fiber
+and extended-chain calculations. It recovers Litt's exact thread and records
+the remaining Walker/Ghrist attribution gap. It does not resolve Walker's
+Proposition 3.3 or perform the four-bar topology experiments listed here.
+
 1. Choose four concrete bar lengths and solve the planar closure constraints; draw both mechanism poses and the marked coupler locus.
 2. Compute connected components and first Betti number of the real configuration space where feasible; test a collinear limiting case. Separate verified computation from conjecture.
 3. Eliminate joint coordinates to obtain a coupler polynomial, and compare its singularities with the original configuration scheme and critical points of the projection.

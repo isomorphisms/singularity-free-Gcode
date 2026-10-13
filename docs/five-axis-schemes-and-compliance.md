@@ -27,6 +27,13 @@ A gantry raised in Z can exhibit increased dynamic tool displacement, depending 
 A collision boundary g=0 can be algebraic in suitable polynomial models, but unsafe penetration g<0 is a semialgebraic inequality, not simply the zero locus of an ideal. Mesh collision also requires inequalities, intersection predicates, or suitable algebraic encodings. An ideal ideal(f−ε z) alone does not prove danger when nominal f>0; if ε is nilpotent, it cannot numerically dominate positive clearance. For a legitimate thickened model use a quotient ring R[ε]/(ε²), then distinguish scheme-theoretic support, associated primes and multiplicity from physical clearance margins.
 
 ## Experiments and acceptance
+The [Fulton bridge](fulton-constraint-fibers.md) supplies exact frame and
+Jacobian identities for the stated idealized AC head; finite-difference and
+physical-convention acceptance in experiment 1 remain pending. Experiment 2's
+genuine nonreduced inverse fiber is established by the two-link arm. The head
+pole is reduced excess freedom. The earlier toy ideal is still an illustration,
+not evidence that the head has nilpotents. Experiments 3–6 remain unimplemented.
+
 1. Verify an AC-head FK model and its symbolic Jacobian against finite differences, including axis convention and tool length.
 2. Construct a genuine nonreduced inverse-kinematic fiber; compare radical, tangent space and multiplicity with ordinary point-set IK.
 3. Introduce a tall workpiece and collision/holder swept volumes; test alternate IK branches and detours.
