@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   train-track:
+    name: ${{ github.event_name == 'pull_request' && 'train-track' || format('train-track-{0}', github.event_name) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
