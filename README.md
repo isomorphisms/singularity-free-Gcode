@@ -57,6 +57,7 @@ Geometric and kinematic singularity avoidance may later become explicit realizat
 - `docs/intention-stack.md` — the proposed levels and their relations;
 - `docs/semantic-views.md` — why track pieces, continuous rails, figures, paths, and machine motions form overlapping views rather than one erasing hierarchy;
 - `docs/adverbs.md` — Adriç clauses as scoped constraints on valid realizations;
+- [`docs/fulton-constraint-fibers.md`](docs/fulton-constraint-fibers.md) — worked intersection-theory results and the offline continuation handoff;
 - `examples/train-track/` — one semantic track lowered to PostScript and illustrative G-code.
 
 The syntax is exploratory. This repository deliberately postpones deciding whether every distinction belongs in a type system, an effect system, a module system, a constraint solver, or a family of intermediate representations.
