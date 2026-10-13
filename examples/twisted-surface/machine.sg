@@ -1,0 +1,10 @@
+# Exact geometry of the simulation reference; not a calibrated real mill.
+machine head5 mm-radians-v1
+axis X linear -250 250 100 200 1000 -20.680176213657681
+axis Y linear -250 250 100 200 1000 5.4097428393579214
+axis Z linear -250 250 100 200 1000 123.68487952023081
+axis B rotary -2 2 1 2 10 0.40000000000000002
+axis C rotary -9.4247779607693793 9.4247779607693793 1 2 10 2.9670597283903604
+tool 80 1 5 10
+tolerance 0.029999999999999999 0.002
+spindle 1200

@@ -1,0 +1,18 @@
+boundary	command_or_observation	status	detail
+host	uname -srm	OBSERVED	Linux 6.18.44 x86_64; disposable host
+compiler	cc --version	OBSERVED	Ubuntu GCC 13.3.0; C11 -O2 -Wall -Wextra -Wpedantic -Werror
+native	make all test examples	PASS	9993 independent checks; zero failures; both paired examples; twelve-joint trace; algebraic experiments
+address-undefined	ASAN_OPTIONS=detect_leaks=0 make sanitize	PASS	9993 independent checks and algebraic experiments; address and undefined-behavior instrumentation
+leak-sanitizer	default make sanitize	NOT_RUN	LeakSanitizer cannot inspect /proc task entries on this host; initial attempted run failed with environment fatal error
+source-and-output-bytes	sha256sum --check evidence/source.sha256	PASS	all 36 retained source/input/output hashes matched
+public-cli	build/gcode-plan linuxcnc examples/pneumatic-fitting/machine.sg examples/pneumatic-fitting/toolpath.sg build/fitting.ngc	PASS	448 poses; output bytes matched retained continuous.ngc
+existing-train-track	sh checks/check-train-track.sh	PASS	semantic/source/motion checks and Ghostscript parse; gs available at /usr/bin/gs
+runtime-dependencies	ldd build/gcode-plan	OBSERVED	libc and libm; no C++ or Python runtime dependency in native output
+linuxcnc-equations	pinned v2.9.4 5axiskins equations	PASS	independent scalar parity with B sign and Z datum conversion; not controller execution
+linuxcnc-controller	command -v rs274 linuxcnc	NOT_RUN	controller/interpreter executable unavailable
+flexible-pipes	verified deployed entrypoint	NOT_RUN	data-only schema-v1 registration candidate prepared; no deployed entrypoint used
+ai-ci	independent CNC acceptance	NOT_RUN	no verified external CNC gate used; local independent equations remain local tests
+material-removal	finished fitting/chamfer verification	NOT_RUN	centerline/process-intent fixture only; no stock-removal or tool-contact validation
+physical-machine	actual cutting and controller dynamics	NOT_RUN	no physical machine test; no finish or machining-time claim
+svg-preview	local SVG bitmap rendering	NOT_RUN	SVG source/data retained; installed converter lacks its rsvg-convert delegate; no successful bitmap visual inspection claimed
+scheme-admission	quotient-ring and annulus experiments	NOT_DEMONSTRATED	real-root decisions match conventional methods; area exponents approximately 2 and 3/2; no scheme code linked into production

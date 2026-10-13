@@ -1,0 +1,8 @@
+role	repository	revision	meaning
+recovered-base	isomorphisms/singularity-free-Gcode	c806c89f446093367e5dfc0e2dc4c21688edee24	preserved intention and train-track work
+integrated-main	isomorphisms/singularity-free-Gcode	24659b853ad922d83cb7869812ffcd61e005e262	preserved subsequently published views, checks, linkage and compliance research
+reference	LinuxCNC/linuxcnc	b8ccac8f835c0610233fdf799255c63f2b9738ac	v2.9.4 peeled tag; 5axiskins source equations
+reference	machinekit/machinekit	ef46939b490bfa029c9d25474cc2e35543c9ac8e	genserkins source
+reference	FreeCAD/FreeCAD	15bd466ccbe19403ccd948e6ae405741999e83dd	current CAM postprocessor source
+orchestration-owner	isomorphisms/flexible-pipes	def2a66fe61a2b23440f98031f1defa738a0d1ee	command/stage and delivery boundary; external execution NOT_RUN
+acceptance-owner	isomorphisms/ai-ci	3d174000649f9f828c29e6be981cfd0e60646014	independent acceptance ownership; CNC gate NOT_RUN

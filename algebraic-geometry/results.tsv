@@ -1,0 +1,17 @@
+experiment	parameter	real_configurations	multiplicity	jacobian_magnitude	area	scaling_exponent
+x-squared-equals-t	-1	0	1	0	NA	NA
+x-squared-equals-t	-1e-08	0	1	0	NA	NA
+x-squared-equals-t	0	1	2	0	NA	NA
+x-squared-equals-t	1e-08	2	1	0.0002	NA	NA
+x-squared-equals-t	0.01	2	1	0.2	NA	NA
+x-squared-equals-t	1	2	1	2	NA	NA
+two-rods-d-1	0.02	2	1	3.46410161514	0.00369537036283	0
+two-rods-d-1	0.01	2	1	3.46410161514	0.000923780961709	2.00009624455
+two-rods-d-1	0.005	2	1	3.46410161514	0.000230941390723	2.00002404897
+two-rods-d-1	0.0025	2	1	3.46410161514	5.77351071072e-05	2.00000601148
+two-rods-d-1	0.00125	2	1	3.46410161514	1.44337617415e-05	2.00000150282
+two-rods-d-2	0.02	1	2	0	0.0107410652102	0
+two-rods-d-2	0.01	1	2	0	0.00378441179714	1.5049960872
+two-rods-d-2	0.005	1	2	0	0.00133566460058	1.5025113053
+two-rods-d-2	0.0025	1	2	0	0.000471816828353	1.501258996
+two-rods-d-2	0.00125	1	2	0	0.000166739572205	1.50063033736

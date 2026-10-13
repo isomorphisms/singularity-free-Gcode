@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "gcode-singularities",
+  "parameters": {
+    "checkout": {"required": true, "pattern": "^/[^\\n]+$"},
+    "git": {"required": true, "pattern": "^/[^\\n]+$"},
+    "make": {"required": true, "pattern": "^/[^\\n]+$"}
+  },
+  "required_stages": ["source-identity", "native-build-and-verification"],
+  "stages": [
+    {"kind": "command", "name": "source-identity", "argv": ["{{git}}", "-C", "{{checkout}}", "rev-parse", "HEAD"], "cwd": "."},
+    {"kind": "command", "name": "native-build-and-verification", "argv": ["{{make}}", "-C", "{{checkout}}", "all", "test", "examples"], "cwd": "."}
+  ]
+}
