@@ -23,11 +23,11 @@ Analytic IK and competent continuation recover the same branch information;
 Fulton supplies precise multiplicity, excess and limit statements. No speed
 or clearance advantage has been established.
 
-The next bounded implementation is an **offline pole limiting-setting
-compatibility diagnostic**, defined by the Fulton handoff. Return incoming
-and outgoing settings, their intersection, full exceptional fiber and scoped
-status; emit no motion. Macaulay2 owns algebra, C later owns numerical
-geometry, and Grease owns orchestration.
+The bounded [offline pole limiting-setting compatibility diagnostic](../experiments/pole-continuation/README.md)
+is implemented. It returns incoming and outgoing limiting ideals, their
+intersection, the full exceptional fiber and scoped status; it emits no motion.
+Flexible Pipes runs the Grease orchestration and independent ai-ci acceptance.
+Macaulay2 owns algebra; C retains the later numerical-geometry boundary.
 
 Attach results to the requested toolpath's feasible-configuration-lift view,
 retaining the [semantic object](intention-stack.md), [overlapping views](semantic-views.md),
