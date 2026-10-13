@@ -55,7 +55,16 @@ Geometric and kinematic singularity avoidance may later become explicit realizat
 ## Initial documents
 
 - `docs/intention-stack.md` — the proposed levels and their relations;
-- `docs/adverbs.md` — Adriç clauses as constraints on valid realizations;
+- `docs/semantic-views.md` — why track pieces, continuous rails, figures, paths, and machine motions form overlapping views rather than one erasing hierarchy;
+- `docs/adverbs.md` — Adriç clauses as scoped constraints on valid realizations;
 - `examples/train-track/` — one semantic track lowered to PostScript and illustrative G-code.
 
 The syntax is exploratory. This repository deliberately postpones deciding whether every distinction belongs in a type system, an effect system, a module system, a constraint solver, or a family of intermediate representations.
+
+## Check the first example
+
+```sh
+sh checks/check-train-track.sh
+```
+
+The check verifies ten semantic strokes, one PostScript and G-code source marker for each, exactly one working XY traversal per stroke, and pen-up travel. When Ghostscript is available it also parses the PostScript program. The same check runs in GitHub Actions.
