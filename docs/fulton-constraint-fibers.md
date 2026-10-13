@@ -4,7 +4,7 @@ Companion [Fulton research revision](https://github.com/walnut-burgundy/fulton/t
 [source map](https://github.com/walnut-burgundy/fulton/blob/de7d0bf7901f8f595e3518e50a375755c5974ac6/sources/fulton-intersection-theory/cnc-source-map.md),
 [two inverse fibers](https://github.com/walnut-burgundy/fulton/blob/de7d0bf7901f8f595e3518e50a375755c5974ac6/notes/cnc-constraint-fibers.md),
 [linkage and offsets](https://github.com/walnut-burgundy/fulton/blob/de7d0bf7901f8f595e3518e50a375755c5974ac6/notes/cnc-linkage-and-offsets.md).
-These identify unmerged research, not installed postprocessor behavior.
+These describe bounded research models and their evidence scope.
 
 | Existing question | Worked result | Consequence |
 | --- | --- | --- |
