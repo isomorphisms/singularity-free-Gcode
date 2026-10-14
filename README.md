@@ -62,6 +62,31 @@ Geometric and kinematic singularity avoidance may later become explicit realizat
 
 The syntax is exploratory. This repository deliberately postpones deciding whether every distinction belongs in a type system, an effect system, a module system, a constraint solver, or a family of intermediate representations.
 
+## Configuration-space-aware CNC prototype
+
+The C11 implementation now accepts a machine description and a source-labeled
+toolpath, tracks inverse branches and rotary winding, checks interpolated motion,
+and emits LinuxCNC XYZBC G-code for a specified five-axis head. A one-toolhead
+twelve-joint model demonstrates redundant carriage allocation in simulation.
+
+The pneumatic-fitting fixture removes two invalid baseline connections and
+360 degrees of unnecessary C travel without adding positioning moves. The
+curved-surface fixture reduces C travel from 399 to 40 degrees. These comparisons
+use a defined principal-angle baseline, not a commercial product benchmark.
+
+- [Prototype, inputs, build and validation](docs/cnc-prototype.md)
+- [Pneumatic fitting and measured results](examples/pneumatic-fitting/README.md)
+- [Industrial capabilities and complaints](references/industrial-solutions.md)
+- [Scheme experiments and negative production finding](algebraic-geometry/findings.md)
+- [Evidence boundaries and source pins](evidence/README.md)
+
+Controller simulation, material-removal verification and physical-machine
+acceptance remain unperformed. The output is a simulation prototype.
+
+The retained [five-axis/compliance research](docs/five-axis-schemes-and-compliance.md)
+and [linkage topology research](docs/linkage-topology-and-schemes.md) remain
+proposals alongside the measured implementation and algebraic findings.
+
 ## Check the first example
 
 ```sh

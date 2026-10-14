@@ -1,0 +1,19 @@
+name: CNC prototype
+on:
+  pull_request:
+  push:
+    branches: [main, sun/gcode-singularities-01]
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - name: Build, independent checks, paired examples and algebraic experiments
+        run: make all test examples
+      - name: Validate generated examples through the public CLI
+        run: ./build/gcode-plan linuxcnc examples/pneumatic-fitting/machine.sg examples/pneumatic-fitting/toolpath.sg build/fitting.ngc

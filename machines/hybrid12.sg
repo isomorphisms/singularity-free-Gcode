@@ -1,0 +1,17 @@
+# Exact geometry of the simulation reference; not a calibrated real mill.
+machine hybrid12 mm-radians-v1
+axis X linear -10 10 100 200 1000 0
+axis Y linear -250 250 100 200 1000 0
+axis Z linear -250 250 100 200 1000 130
+axis B rotary -2 2 1 2 10 0
+axis C rotary -9.4247779607693793 9.4247779607693793 1 2 10 0
+axis U linear -250 250 100 200 1000 0
+axis V linear -250 250 100 200 1000 0
+axis W linear -250 250 100 200 1000 0
+axis P linear -250 250 100 200 1000 0
+axis Q linear -250 250 100 200 1000 0
+axis A rotary -1.0471975511965976 1.0471975511965976 1 2 10 0
+axis E rotary -1.0471975511965976 1.0471975511965976 1 2 10 0
+tool 80 1 5 10
+tolerance 0.029999999999999999 0.002
+spindle 1200
